@@ -1,0 +1,215 @@
+
+/*extra large device*/
+@media (max-width: 1440px){
+  
+}
+/*large display, laptop*/
+@media (min-width: 1280px) and (max-width: 1439px){
+
+}
+
+/* taplet-landscape*/
+@media (min-width: 781px) and (max-width: 1279px){
+    .nav{
+        padding: 0 72px 0 72px;
+    }
+
+    .logo-link img{
+        height: 48px;
+    }
+    header .menu{
+        display: none;
+    }
+    header .link{
+        align-items: center;
+    }
+    
+    header .link .action-btn{
+        padding-left: 14px;
+    }
+
+    header .action-btn{
+        display: inline-block;
+    }
+
+    .hero-wrapper {
+        position: absolute;
+        left: 120px;
+        right: 120px;
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-contant div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    
+
+}
+
+/*taplet, mobile-landscape*/
+@media (min-width: 376px) and (max-width: 780px){
+    .nav{
+        padding: 0 24px 0 24px;
+    }
+    .logo-link img{
+        height: 48px;
+    }
+    header .menu{
+        display: none;
+    }
+    header .link{
+        align-items: center;
+    }
+    
+    .nav .link .link-item div{
+        display: none;
+    }
+    header .link .action-btn{
+        padding-left: 14px;
+    }
+
+    header .action-btn{
+        display: inline-block;
+    }
+
+    .hero-wrapper {
+        position: absolute;
+        left: 24px;
+        right: 24px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-contant div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .products, .New-arrivals, .blogs-section{
+        display: flex;
+        margin: 0;
+        margin-top: 8px;
+        padding: 24px 0px 24px 24px;
+        column-gap: 8px;
+        flex-direction: column;
+        background-color: #D7E2ED;
+    }
+
+
+    
+}
+
+
+/*mobile-portarit*/
+@media (max-width: 375px){
+    .nav{
+        padding: 0 24px 0 24px;
+    }
+    .logo-link img{
+        height: 48px;
+    }
+    header .menu{
+        display: none;
+    }
+    header .link{
+        align-items: center;
+    }
+    
+    .nav .link .link-item div{
+        display: none;
+    }
+    header .link .action-btn{
+        padding-left: 14px;
+    }
+
+    header .action-btn{
+        display: inline-block;
+    }
+
+    .hero-wrapper {
+        position: absolute;
+        left: 24px;
+        right: 24px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-contant div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .products, .New-arrivals, .blogs-section{
+        display: flex;
+        margin: 0;
+        margin-top: 8px;
+        padding: 24px 0px 24px 24px;
+        column-gap: 8px;
+        flex-direction: column;
+        background-color: #D7E2ED;
+    }
+
+    .collection-card1, .collection-card2, .collection-card3, .collection-card4 {
+        flex: 1;
+        height: 100%;
+        min-width: 300px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .New-collection {
+        display: flex;
+        margin: 0;
+        margin-top: 8px;
+        padding: 30px 24px 30px 24px;
+        width: auto;
+        column-gap: 8px;
+        flex-direction: column;
+        background-color: #D7E2ED;
+    }
+
+    .collection-ad-contant {
+        position: absolute;
+        z-index: 2;
+        padding: 20px;
+        top: 30%;
+    }
+
+    .section-heading-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .collection-ad-paragraph {
+        display: none;
+    }
+
+    .collection-ad-heading {
+        color: white;
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+    .blogs-section .blogs-container .blogs:nth-of-type(3),
+    .blogs-section .blogs-container .blogs:nth-of-type(2){
+        display: none;
+    }
+
+    .testimonals-section .testimonals-container{
+        flex-direction: column;
+    }
+
+   
+}
