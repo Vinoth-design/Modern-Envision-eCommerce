@@ -243,10 +243,16 @@ header{
     background-color: white;
 }
 
-.blogs-section, .testimonals-section, .faq, .footer{
+.blogs-section, .testimonals-section{
     background-color: white;
     padding: 30px 72px 30px 72px;
 }
+
+.faq, footer{
+    padding: 30px 72px 30px 72px;
+
+}
+
 
 .section-heading{
     color: #1E2150;

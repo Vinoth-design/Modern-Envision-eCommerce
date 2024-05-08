@@ -104,8 +104,6 @@
         background-color: #D7E2ED;
     }
 
-
-    
 }
 
 
@@ -151,6 +149,27 @@
         text-align: center;
     }
 
+    .hero-caption{
+        color: #E9E9EE;
+        font-size: 12px;
+        padding-bottom: 8px;
+    }
+    
+    .hero-heading{
+        color:white;
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 120%;
+        padding-bottom: 8px;
+        
+    }
+    
+    .hero-subheading{
+        color: white;
+        font-size: 16px;
+        line-height: 150%
+    }
+
     .products, .New-arrivals, .blogs-section{
         display: flex;
         margin: 0;
@@ -161,6 +180,40 @@
         background-color: #D7E2ED;
     }
 
+    .products-wrapper {
+        position: relative;
+        margin-bottom: 24px;
+        display: flex;
+        column-gap: 16px;
+        overflow: auto;
+    }
+
+    .product-id div {
+        font-size: 12px;
+        margin-bottom: none;
+    }
+
+    .product-id {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4px;
+        margin-top: 8px;
+    }
+
+    .products-card-new-arrivals .product-name {
+        font-weight: bold;
+        margin: 4px 4px;
+        font-size: 18px;
+    }
+    .product-price{
+        font-size: 22px;
+    }
+
+    .product-rating{
+        margin-bottom: 8px;
+        color: #1E2150;
+    }
+    
     .collection-card1, .collection-card2, .collection-card3, .collection-card4 {
         flex: 1;
         height: 100%;
@@ -175,16 +228,27 @@
         margin-top: 8px;
         padding: 30px 24px 30px 24px;
         width: auto;
-        column-gap: 8px;
-        flex-direction: column;
+        row-gap: 8px;
+        flex-direction: row;
         background-color: #D7E2ED;
     }
 
+    .New-collection-container {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        row-gap: 16px;
+    }
+
+    .collection-collection{
+        width: 100%;
+    }
     .collection-ad-contant {
         position: absolute;
         z-index: 2;
         padding: 20px;
-        top: 30%;
+        bottom: 35%;
+        height: fit-content;
     }
 
     .section-heading-container{
@@ -194,6 +258,16 @@
 
     .collection-ad-paragraph {
         display: none;
+    }
+
+    .products, .New-arrivals, .blogs-section {
+        display: flex;
+        margin: 0;
+        margin-top: 8px;
+        padding: 24px 24px 24px 24px;
+        column-gap: 8px;
+        flex-direction: column;
+        background-color: #D7E2ED;
     }
 
     .collection-ad-heading {
@@ -211,5 +285,20 @@
         flex-direction: column;
     }
 
-   
+    
+    .footer {
+        padding-left: 24px;
+        padding-right: 24px;
+        flex-direction: column;
+    }
+    .footer .container {
+        max-width: 100%;
+    }
+
+    .faq {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    
 }
+   
