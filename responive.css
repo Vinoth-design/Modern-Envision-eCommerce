@@ -53,7 +53,7 @@
 }
 
 /*taplet, mobile-landscape*/
-@media (min-width: 376px) and (max-width: 780px){
+@media (min-width: 481px) and (max-width: 780px){
     .nav{
         padding: 0 24px 0 24px;
     }
@@ -108,7 +108,7 @@
 
 
 /*mobile-portarit*/
-@media (max-width: 375px){
+@media screen and (max-width: 480px){
     .nav{
         padding: 0 24px 0 24px;
     }
