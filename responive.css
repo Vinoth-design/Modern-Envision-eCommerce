@@ -108,7 +108,7 @@
 
 
 /*mobile-portarit*/
-@media screen and (max-width: 480px){
+@media (max-width: 480px){
     .nav{
         padding: 0 24px 0 24px;
     }
