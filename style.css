@@ -246,6 +246,10 @@ header{
 .blogs-section, .testimonals-section{
     background-color: white;
     padding: 30px 72px 30px 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 .faq, footer{
@@ -476,14 +480,15 @@ label:nth-of-type(2){
     padding: 30px 0px 30px 72px;
     width: auto;
     column-gap: 8px;
-    flex-direction: column;
+    flex-direction: row;
     background-color: #D7E2ED;
     
 }
 .New-collection-container{
     position: relative;
     display: flex;
-    column-gap: 24px;
+    gap: 24px;
+    flex-direction: row;
 }
 .collection-ad{
     flex: 50%;
@@ -532,12 +537,17 @@ label:nth-of-type(2){
 
 .blogs-container{
     display: flex;
-    column-gap: 24px;
-
+    column-gap: 16px;
+    overflow: auto;
+    margin-bottom: 24px;
+    max-width: 100%;
+}
+.blogs-container::-webkit-scrollbar{
+    display: none;
 }
 
 .blogs{
-    flex: 1;
+    min-width: 320px;
 }
 
 .blogs-img{
@@ -561,6 +571,32 @@ label:nth-of-type(2){
     
 }
 
+.pagination-container{
+    position: static;
+    height: 12px;
+    width: fit-content;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding-top: 16px;
+    
+}
+
+.pagination-container .page{
+    background-color: #4B4D73;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color .8s ease-in-out;
+}
+
+.pagination-container .active{
+    background-color: #D34F00;
+}
+
 .tertiary-btn{
     color: #D34F00;
     margin: 0px;
@@ -569,11 +605,13 @@ label:nth-of-type(2){
     cursor: pointer;
 }
 
+
 /*testminols start*/
 
 .testimonals-container{
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
+  flex-direction: row;
 }
 
 .testimonals--wrapper-left{
@@ -581,7 +619,11 @@ label:nth-of-type(2){
     width: 100%;
 
 }
-
+.testimonals--wrapper-left img{
+    box-sizing: border-box;
+    border: 10px solid #D7E2ED;
+}
+ 
 .testimonals-image{
     background-color: #D7E2ED;    
     width: 100%;
@@ -636,11 +678,11 @@ label:nth-of-type(2){
     background-color: #1E2150;
     display: inline;
     padding: 18px 18px;
-    
+    align-content: center;    
 }
 .acord_question{
     background-color: transparent;
-    padding-left: 16px;
+    padding: 8px 16px 8px 16px;
     display: flex;
     align-items: center;
     justify-content: center;

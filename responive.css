@@ -8,7 +8,7 @@
 
 }
 
-/* taplet-landscape*/
+/* taplet*/
 @media (min-width: 781px) and (max-width: 1279px){
     .nav{
         padding: 0 72px 0 72px;
@@ -47,6 +47,19 @@
         align-items: center;
         text-align: center;
     }
+
+    .footer {
+        padding-left: 72px;
+        padding-right: 72px;
+        
+    }
+   
+
+    .faq {
+        padding-left: 72px;
+        padding-right: 72px;
+    }
+    
 
     
 
@@ -94,23 +107,28 @@
         text-align: center;
     }
 
-    .products, .New-arrivals, .blogs-section{
-        display: flex;
-        margin: 0;
-        margin-top: 8px;
-        padding: 24px 0px 24px 24px;
-        column-gap: 8px;
+  
+    .footer {
+        padding-left: 24px;
+        padding-right: 24px;
         flex-direction: column;
-        background-color: #D7E2ED;
+    }
+    .footer .container {
+        max-width: 100%;
     }
 
+    .faq {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    
 }
 
 
 /*mobile-portarit*/
 @media (max-width: 480px){
     .nav{
-        padding: 0 24px 0 24px;
+        padding: 0 16px 0 16px;
     }
     .logo-link img{
         height: 48px;
@@ -125,8 +143,13 @@
     .nav .link .link-item div{
         display: none;
     }
+    
     header .link .action-btn{
         padding-left: 14px;
+    }
+
+    .nav .link .link-item:nth-child(3){
+        display: none;
     }
 
     header .action-btn{
@@ -174,7 +197,8 @@
         display: flex;
         margin: 0;
         margin-top: 8px;
-        padding: 24px 0px 24px 24px;
+        padding: 16x 0px 24px 16px;
+        padding-left: 16px;
         column-gap: 8px;
         flex-direction: column;
         background-color: #D7E2ED;
@@ -226,7 +250,7 @@
         display: flex;
         margin: 0;
         margin-top: 8px;
-        padding: 30px 24px 30px 24px;
+        padding: 30px 16px 30px 16px;
         width: auto;
         row-gap: 8px;
         flex-direction: row;
@@ -236,8 +260,8 @@
     .New-collection-container {
         position: relative;
         display: flex;
-        flex-direction: row;
-        row-gap: 16px;
+        flex-direction: column;
+        gap: 16px;
     }
 
     .collection-collection{
@@ -247,7 +271,6 @@
         position: absolute;
         z-index: 2;
         padding: 20px;
-        bottom: 35%;
         height: fit-content;
     }
 
@@ -264,11 +287,13 @@
         display: flex;
         margin: 0;
         margin-top: 8px;
-        padding: 24px 24px 24px 24px;
+        padding: 24px 16px 24px 16px;
         column-gap: 8px;
         flex-direction: column;
         background-color: #D7E2ED;
     }
+
+   
 
     .collection-ad-heading {
         color: white;
@@ -276,19 +301,29 @@
         font-size: 24px;
         margin-bottom: 16px;
     }
-    .blogs-section .blogs-container .blogs:nth-of-type(3),
+
+    .blogs-section .blogs-container .blogs{
+        flex: 1;
+    }    
+      
+    
+    /* .blogs-section .blogs-container .blogs:nth-of-type(3),
     .blogs-section .blogs-container .blogs:nth-of-type(2){
         display: none;
-    }
+    } */
 
-    .testimonals-section .testimonals-container{
+    .testimonals-section{
+        padding: 24px 16px 24px 16px;
+
+    }
+    .testimonals-container{
         flex-direction: column;
+        gap: 16px;
     }
-
     
     .footer {
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 16px;
+        padding-right: 16px;
         flex-direction: column;
     }
     .footer .container {
@@ -296,8 +331,8 @@
     }
 
     .faq {
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
     
 }

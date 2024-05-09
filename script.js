@@ -27,3 +27,13 @@ faq_btn.forEach(faq_tigger => {
       
     })
 })
+
+function viewmore() {
+    var dot=document.getElementById("dots");
+    var view_more=document.getElementById("view_more");
+    var more=document.getElementById("more");
+
+    if (dot.style.display=="none"){
+        
+    }
+}
